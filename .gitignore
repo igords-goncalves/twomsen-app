@@ -1,0 +1,26 @@
+# Arquivos gerados pelo Node.js
+node_modules/
+
+# Arquivos gerados pelo editor de código
+.vscode/
+.idea/
+
+# Arquivos de log
+logs/
+*.log
+
+# Arquivos de build
+dist/
+
+# Arquivos de configuração que podem conter informações sensíveis
+config.js
+
+# Arquivos que contêm informações sensíveis
+.env
+.env.*
+
+# Arquivos de backup
+*.bak
+
+# Arquivos temporários
+*.tmp
