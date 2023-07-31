@@ -1,3 +1,6 @@
+// Create a instance of model, make and prepare requests
+// a controller is a comunication between server and model
+
 const UserModel = require("../models/userModel.js");
 const connection = require("../database");
 
