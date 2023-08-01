@@ -20,12 +20,8 @@ async function getUserById(req, res, id) {
 
 async function createUser(req, res) {
     const { name, email, post } = req.body;
-    const user = await user.create({ name, email, post });
-    if (res.status === 201) {
-        console.log("User created,");
-    } else {
-        console.log("Something wrong");
-    }
+    const newUser = await user.create({ name, email, post });
+    res.status(201).json(newUser);
 }
 
 module.exports = {
