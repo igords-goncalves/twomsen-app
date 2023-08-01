@@ -1,0 +1,12 @@
+<table class="text-left text-sm mt-6 w-full mb-10">
+    <tr >
+        <th class="px-2 py-2 border text-lg bg-emerald-900">Nome</th>
+        <th class="px-2 py-2 border text-lg bg-emerald-900">Email</th>
+    </tr>
+    <% users.forEach(user => { %>
+    <tr class="hover:bg-emerald-900">
+        <td class="px-2 py-2 border "><strong><%= user.name %></strong></td>
+        <td class="px-2 py-2 border text-zinc-400"><%= user.email %></td>
+    </tr>
+    <% }); %>
+</table>
