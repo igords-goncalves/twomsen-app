@@ -1,15 +1,15 @@
-<form action="" class="flex flex-col items-center justify-center">
+<form action="/" method="POST" id="form" class="flex flex-col items-center justify-center">
     <div class="pb-4 flex flex-col  w-full">
       <label class="pb-1">Nome</label>
-      <input class="bg-zinc-800 border-zinc-600 py-3 px-4 text-lg rounded-md w-full" type="text" placeholder="Digite seu nome">
+      <input name="name" class="bg-zinc-800 border-zinc-600 py-3 px-4 text-lg rounded-md w-full" type="text" placeholder="Digite seu nome">
     </div>
     <div class="pb-4 flex flex-col w-full">
       <label class="pb-1" for="">E-mail</label>
-      <input class="bg-zinc-800 border-zinc-600 py-3 px-4 text-lg rounded-md w-full" type="text" placeholder="Digite seu e-mail">
+      <input name="email" class="bg-zinc-800 border-zinc-600 py-3 px-4 text-lg rounded-md w-full" type="text" placeholder="Digite seu e-mail">
     </div>
     <div class="pb-4 flex flex-col w-full">
       <label class="pb-1" for="">Texto</label>
-      <textarea class="bg-zinc-800 border-zinc-600 rounded-md py-3 px-4 w-full" rows="8" style="resize: none;" placeholder="Digite seu texto"></textarea>
+      <textarea name="post" class="bg-zinc-800 border-zinc-600 rounded-md py-3 px-4 w-full" rows="8" style="resize: none;" placeholder="Digite seu texto"></textarea>
     </div>
-    <button class="font-semibold mt-4 w-full py-3 px-4 text-lg bg-emerald-800 rounded-md">ENVIAR</button>
+    <button type="submit" id="button" class="font-semibold mt-4 w-full py-3 px-4 text-lg bg-emerald-800 rounded-md">ENVIAR</button>
   </form>
