@@ -10,14 +10,12 @@ class UserModel {
     async findAll() {
         const query = "SELECT * FROM users";
         const result = await this.execute(query);
-        console.table(result);
         return result;
     }
 
     async findById(id) {
         const query = `SELECT * FROM users WHERE id = ${id}`;
         const result = await this.execute(query);
-        console.table(result);
         return result;
     }
 
@@ -25,7 +23,6 @@ class UserModel {
         const { name, email, post } = data;
         const query = `INSERT INTO users (name, email, post) VALUES ('${name}', '${email}', '${post}')`
         const result = await this.execute(query)
-        console.log("Success!")
         return result
     }
 
